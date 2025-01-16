@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Card Offer Assistant",
+    "version": "1.0.0",
+    "description": "Suggests the best credit card based on available offers",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
